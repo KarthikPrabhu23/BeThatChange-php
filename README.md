@@ -1,6 +1,10 @@
 # BeThatChange, a place for all your donations
 A completely responsive website created in 24 hours at Aakriti-2022 hackathon. Secured 2nd place while in our 2nd year of study among a total competition of 12 teams.
 
+## Site live at [BeThatChange](https://bethatchange.000webhostapp.com/).
+
+</br>
+
 Tech stack :
 + HTML, CSS, Js
 + PHP
