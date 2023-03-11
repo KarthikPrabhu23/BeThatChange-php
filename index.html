@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be that change</title>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AOS link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- Font link -->
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- NAV BAR starts -->
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a data-aos="zoom-in-right" data-aos-delay="150" href="#" class="logo">
+        BE THAT CHANGE
+      </a>
+
+      <nav class="navbar">
+        <a data-aos="zoom-in-right" data-aos-delay="300" href="#home">Home</a>
+        <a data-aos="zoom-in-right" data-aos-delay="450" href="https://bethatchange.000webhostapp.com/store/index.php"
+          >Contact us</a
+        >
+        <a data-aos="zoom-in-right" data-aos-delay="750" href="#destination"
+          >Services</a
+        >
+        <a data-aos="zoom-in-right" data-aos-delay="850" href="https://bethatchange.000webhostapp.com/store/index.php"
+          >Volunteer</a
+        >
+        <a data-aos="zoom-in-right" data-aos-delay="870" href="#blogs">Blogs</a>
+        <a data-aos="zoom-in-right" data-aos-delay="870" href="https://bethatchange.000webhostapp.com/Team_Pb24/index.html">About us</a>
+      </nav>
+
+      <a
+        data-aos="zoom-in-left"
+        data-aos-delay="1300"
+        href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view"
+        class="btn"
+        >Donate now</a
+      >
+    </header>
+    <!-- NAV BAR ENDS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
+    </script>
+
+    <!-- VDO SLIDER starts -->
+    <header id="home">
+      <a href="#" class="brand">Be that change</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Home</a>
+          <a href="#">Donate</a>
+          <a href="#">Volunteer</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video
+        class="video-slide active"
+        src="video/thali-served-restaurant.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/Cloth.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/Education.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/Volunteer.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/Contact_Us.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+
+      <div class="content active">
+        <h1>Donate food<br /><span></span></h1>
+        <p>
+          Donate your excess remaining food, we will make sure that it reaches the needy. <br> Today's wastage is tomorrow's shortage
+        </p>
+        <a href="https://bethatchange.000webhostapp.com/food/index.php">Donate food</a>
+      </div>
+      <div class="content">
+        <h1>Donate clothes<br /><span></span></h1>
+        <p>
+          We distribute old used clothes to the needy.
+        </p>
+        <a href="https://bethatchange.000webhostapp.com/clothes/index.php">Donate clothes</a>
+      </div>
+      <div class="content">
+        <h1>Contribute for education<br /></h1>
+        <p>Finance or donate for a child's education</p>
+        <a href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view">Contribute now</a>
+      </div>
+      <div class="content">
+        <h1>Volunteer with us <br /><span> </span></h1>
+        <p>Join us in reaching your goals, lets make this a better place to live in !!</p>
+        <a href="https://bethatchange.000webhostapp.com/store/index.php">Connect with us</a>
+      </div>
+      <div class="content">
+        <h1>Contact us<br /><span></span></h1>
+        <p>Get your issues resolved. Connect with us.</p>
+        <a href="https://bethatchange.000webhostapp.com/store/index.php">Contact us</a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      //Javacript for responsive navigation menu
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+
+      //Javacript for video slider navigation
+      const btns = document.querySelectorAll(".nav-btn");
+      const slides = document.querySelectorAll(".video-slide");
+      const contents = document.querySelectorAll(".content");
+
+      var sliderNav = function (manual) {
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+
+        setTimeout(active, 3100);
+      };
+
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
+      });
+    </script>
+
+    <!-- VDO SLIDER ends -->
+
+    <!-- FACTS starts -->
+    <section class="about" id="about">
+      <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <video src="video/don food.mp4" muted autoplay loop class="video"></video>
+        <div class="controls">
+          <span class="control-btn" data-src="video/don_2.mp4"></span>
+          <span class="control-btn" data-src="video/don_3.mp4"></span>
+          <span class="control-btn" data-src="video/don_4.mp4"></span>
+        </div>
+      </div>
+
+      <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <!-- <span>Why Donate?</span> -->
+        <h3>Why Donate?</h3>
+        <p>
+          Two-thirds of people in India live in poverty: 68.8% of the Indian population lives on less than $2 a day. Over 30% even have less than $1.25 per day available - they are considered extremely poor. <br> <br> Despite the good economic performance, with over 200 million people who are food insecure, India is home to the largest number of hungry people in the world. <br> <br> In the ranking of the Global Hunger Index 2017 it covers position 100 out of 119 ranked countries and has an "serious" (31.4) food security situation. <br>The top 10% of the Indian population holds 77% of the total national wealth. 73% of the wealth generated in 2017 went to the richest 1%, while 67 million Indians who comprise the poorest. 
+        </p>
+        <!-- <a href="#" class="btn">read more</a> -->
+      </div>
+    </section>
+    <!-- FACTS end -->
+
+    <!-- CONTRIBUTE STARTS -->
+    <section class="destination" >
+      <div class="heading" id="destination">
+        <span>Contribute now !!!</span>
+        <h1>Be that change</h1>
+      </div>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <div class="image">
+            <img src="image/foods1.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Food</h3>
+            <p>Donate your excess leftover food</p>
+            <a href="https://bethatchange.000webhostapp.com/food/index.php"
+              >Donate Now <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="230">
+          <div class="image">
+            <img src="image/clothes1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Clothes</h3>
+            <p>Provide your used , unwanted clothes for better use</p>
+            <a href="https://bethatchange.000webhostapp.com/clothes/index.php"
+              >Donate Now <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="420">
+          <div class="image">
+            <img src="image/books.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Books</h3>
+            <p>Shine someone's future</p>
+            <!--<a href="http://localhost/book/index.html"-->
+            <a href="https://bethatchange.000webhostapp.com/book/index.php"
+              >Donate Now <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <div class="image">
+            <img src="image/money.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Money</h3>
+            <p>Help sustain someone's future</p>
+            <a href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view"
+              >Donate Now <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="750">
+          <div class="image">
+            <img src="image/edu.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Education</h3>
+            <p>Contribute to a child's basic education & needs.</p>
+            <a href="https://pages.razorpay.com/pl_JXRkK9axmHSnJ2/view"
+              >Sponsor Now <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="800">
+          <div class="image">
+            <img src="image/volunteer.png" alt="" />
+          </div>
+          <div class="content">
+            <h3>Volunteer</h3>
+            <p>Help us do our job. Be that change</p>
+            <a href="https://bethatchange.000webhostapp.com/store/index.php">Volunteer Now <i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG starts -->
+    <section class="blogs" >
+      <div class="heading" id="blogs">
+        <span>blogs & posts</span>
+        <h1>The untold stories</h1>
+      </div>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <div class="image">
+            <img src="image/giving.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="https://www.ef.com/wwen/blog/efacademyblog/importance-giving-back-to-your-community/" class="link">The importance and benefits of giving back to your community</a>
+            <p>
+              Volunteering your time to support a cause you are passionate about is something you will never regret. It will enrich your life, familiarize you with your community, and..... 
+            </p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 26th may, 2022</a>
+              <a href="#"><i class="fas fa-user"></i> by admin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <div class="image">
+            <img src="image/hunger.webp" alt="" />
+          </div>
+          <div class="content">
+            <a href="https://www.giveindia.org/blog/hunger-is-eating-into-india/" class="link">Hunger is eating into India</a>
+            <p>
+              An estimated 189 million people in India were already undernourished before the pandemic began. According to a study released earlier this month, the first wave of COVID-19 pushed 23 crore more Indians....
+            </p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 26th may, 2022</a>
+              <a href="#"><i class="fas fa-user"></i> by admin</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <div class="image">
+            <img src="image/edu.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="https://www.smilefoundationindia.org/blog/education-for-poor-children/" class="link">Educating  Poor Children</a>
+            <p>
+              The key to development lies in educating children. Partnerships between the government and other stakeholders can fast-track the process of education for poor children. Improving access to education, counseling of students...
+            </p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 26th may, 2022</a>
+              <a href="#"><i class="fas fa-user"></i> by admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- FOOTER starts -->
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+          <div class="footer-col">
+              <h4>About Us</h4>
+              <p>
+              Change begins with us. Be that change encourages and promotes, sharing and spreading happiness.
+              We the team of be that change scouts for donation. The donation is collected and distributed to people in need. 
+              </p>
+        <img class="mainsdg" src="SDG.png" alt="" />
+          </div>
+          <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+              <li><a href="#destination">Services</a></li>
+              <li><a href="http://localhost/store/index.html">Volunteer</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="http://localhost/store/index.html">Contact Us</a></li>
+              <li><a href="https://bethatchange.000webhostapp.com/Team_Pb24/index.html">About Us</a></li>
+              </ul>
+        <br>
+        <div class="sdg-pic">
+          <img class="sdg" src="image/sdg_1.png" alt="" />
+          <img class="sdg" src="image/sdg_2.png" alt="" /><br>
+          <img class="sdg" src="image/sdg_10.png" alt="" />
+          <img class="sdg" src="image/sdg_12.png" alt="" />
+          </div>
+          </div>
+      <div class="footer-col">
+              <h4>Contact Info</h4>
+              <ul class="secicon">
+              <li> <img class="icon" src="image/map_icon.png" alt="" />CANARA ENGINEERING COLLEGE Benjanapadavu,<br />
+              Bantwal Taluk Mangaluru, D.K. District.,<br />
+              Karnataka, INDIA - 574219</li>
+              <li> <img class="icon" src="image/phone_icon.png" alt="" />8792727001<br>8792736001</li>
+              <li><img class="icon" src="image/enve_icon-removebg-preview.png" alt="" />bethatchange24@gmail.com </li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+          </div>
+      </div>
+      </footer>
+
+      <!-- Footer ends -->
+
+
+  </body>
+</html>

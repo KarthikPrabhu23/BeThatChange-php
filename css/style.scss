@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+$blue:#29d9d5;
+$black:#111;
+$white:#fff;
+$light-color:#aaa;
+$bg-color:#222;
+$black-bg:rgba(17,17,17,.7);
+$border:.2rem solid $blue;
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+
+    &::-webkit-scrollbar{
+        width:1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: $black;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: $blue;
+        border-radius: 5rem;
+    }
+}
+
+body{
+    background: $black;
+    overflow-x: hidden;
+}
+
+section{
+    padding:3rem 9%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+
+    span{
+        color:$blue;
+        font-size: 2rem;
+    }
+
+    h1{
+        font-size: 4rem;
+        color:$white;
+    }
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:1rem 3rem;
+    font-size: 1.7rem;
+    color:$blue;
+    border:$border;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: none;
+
+    &:hover{
+        background: $blue;
+        color:$black;
+    }
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+
+    .navbar a{
+        font-size: 1.7rem;
+        color:$light-color;
+        display: inline-block;
+        margin:0 1rem;
+
+        &:hover{
+            color:$blue;
+        }
+    }
+
+    .btn{
+        margin-top: 0;
+    }
+}
+
+.logo{
+    font-size: 2.5rem;
+    color:$white;
+    font-weight: bolder;
+
+    i{
+        color:$blue;
+        padding-right: .5rem;
+    }
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color:$white;
+    cursor: pointer;
+    display: none;
+}
+
+// FACTS START
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 5rem;
+
+    .video-container{
+        flex:1 1 42rem;
+
+        video{
+            border-radius: 1rem;;
+            width: 100%;
+        }
+
+        .controls{
+            text-align: center;
+            padding:2rem 0;
+
+            span{
+                display: inline-block;
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+                background: $white;
+                cursor: pointer;
+                margin:.7rem;
+
+                &:hover{
+                    background: $blue;
+                }
+            }
+        }
+    }
+
+    .content{
+        flex:1 1 42rem;
+        margin-bottom: 5rem;
+
+        span{
+            color:$blue;
+            font-size: 2rem;
+        }
+
+        h3{
+            color:$white;
+            font-size: 4rem;
+            margin-top: .5rem;
+        }
+
+        p{
+            padding:1rem 0;
+            font-size: 1.4rem;
+            color:$light-color;
+            line-height: 2;
+        }
+    }
+}
